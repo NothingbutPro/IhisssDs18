@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pop_up_linear">
+    <View
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:alpha="0.69"
+            android:id="@+id/account_rd"
+            android:textStyle="italic|bold"
+            android:text="Click Here"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageView
+            android:id="@+id/account_r"
+            android:src="@drawable/accounting_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-100dp"
+            android:background="@android:color/black"
+            />
+        <View
+            android:layout_marginTop="-40dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:alpha="0.69"
+            android:id="@+id/income_tx"
+            android:textStyle="italic|bold"
+            android:text="Click Here"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:layout_marginTop="-140dp"
+            android:src="@drawable/imcome_tax_final"
+            android:id="@+id/income_t"
+            android:layout_below="@+id/account_rd"
+            android:layout_width="match_parent"
+            android:layout_height="290dp" />
+        <View
+            android:layout_marginTop="-40dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</LinearLayout>
